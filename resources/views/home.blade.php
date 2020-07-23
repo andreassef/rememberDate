@@ -14,16 +14,15 @@
                         </div>
                     @endif
 
-                    <form action="#" method="POST">
+                    <form action="{{ route('home.store') }}" method="POST">
                         @csrf
                         <div class="form-group">
-                            <input class="form-control" type="date" name="date">
+                            <input class="form-control" type="date" name="birtday">
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary">Enviar</button>
                         </div>
                     </form>
-
                 </div>
             </div>
         </div>
