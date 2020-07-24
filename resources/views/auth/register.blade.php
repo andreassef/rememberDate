@@ -61,6 +61,13 @@
                             </div>
                         </div>
 
+                        <div class="form-group row">
+                            <label for="birtday" class="col-md-4 col-form-label text-md-right">{{ __('Birthday') }}</label>
+                            <div class="col-md-6">
+                                <input class="form-control" type="date" name="birtday" value="{{ old('birtday') }}">
+                            </div>
+                        </div>
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">

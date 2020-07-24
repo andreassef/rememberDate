@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreUpdatePostRequest;
+use App\User;
+use Carbon\Carbon;
+use DateTimeZone;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,12 +27,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $peoples = User::all();
+        return view('home', [
+            'peoples'=>$peoples,
+        ]);
     }
 
     public function store(Request $request)
     {
-        dd($request->only('birtday'));
-        return redirect()->route('index');
     }
 }

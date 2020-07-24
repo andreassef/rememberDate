@@ -9,3 +9,8 @@ body {
     background-color: #FA4284;
     color: aliceblue;
 }
+
+.fixarDiv {
+    height: 200px;
+    overflow: auto;
+}
